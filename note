@@ -1,0 +1,5 @@
+## Access data with JPA
+https://spring.io/guides/gs/accessing-data-jpa/
+- Need to define Enity class for object mapping
+- As well as ID auto generate 
+- Repository can create method for you by naming convention, it's good to not capitalize first letter in attribute but do so for method name
