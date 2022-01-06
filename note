@@ -2,4 +2,6 @@
 https://spring.io/guides/gs/accessing-data-jpa/
 - Need to define Enity class for object mapping
 - As well as ID auto generate 
-- Repository can create method for you by naming convention, it's good to not capitalize first letter in attribute but do so for method name
+- Repository can custom method
+ +  [common action][capitalize attribute] matches with [no capitalize first letter attribute]
+ + findByLastName will look for attribute lastName
