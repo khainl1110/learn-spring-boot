@@ -13,11 +13,19 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	
-	protected Customer() {}
+	public Customer() {}
 	
 	public Customer(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
+	}
+	
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	
 	public String getFirstName() {
@@ -28,6 +36,14 @@ public class Customer {
 		return this.lastName;
 	}
 	
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

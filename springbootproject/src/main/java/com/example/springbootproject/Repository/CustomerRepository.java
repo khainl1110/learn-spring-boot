@@ -10,7 +10,7 @@ import com.example.springbootproject.Model.Customer;
 public interface CustomerRepository extends CrudRepository<Customer, Long>{
 	/*
 	 *  need to match object property and capitalize first letter
-	 *  what if first letter is already capitalized? it's ok as well
+	 *  what if first letter is already capitalized? doesn't work if first letter is capitalized
 	 */
 	List<Customer> findByLastName(String lastName);
 	
