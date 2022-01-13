@@ -40,9 +40,9 @@ public class CustomerRestController {
 		return customer;
 	}
 	
-	@PutMapping("/{id}")
-	public Customer updateCustomer(@PathVariable("id") Long id, @RequestBody Customer nCustomer) {
-		Optional<Customer> data =  repo.findById(id);
+	@PutMapping()
+	public Customer updateCustomer(@RequestBody Customer nCustomer) {
+		Optional<Customer> data =  repo.findById(nCustomer.getId());
 		Customer customer = data.get();
 		customer.setFirstName(nCustomer.getFirstName());
 		customer.setLastName(nCustomer.getLastName());
