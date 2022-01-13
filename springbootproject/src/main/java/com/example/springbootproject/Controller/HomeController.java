@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 	@RequestMapping("/")
 	public @ResponseBody String greeting() {
-		return "Hello, World";
+	
+		return "Hello to the app \n Head to /customer/login to login "
+				+ "\n /customer/view to view existing customers and their id "
+				+ "\n /customer/addCustomer to addCustomer";
 	}
+	
+	
 }

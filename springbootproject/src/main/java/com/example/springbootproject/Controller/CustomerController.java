@@ -16,18 +16,10 @@ import com.example.springbootproject.Model.Customer;
 import com.example.springbootproject.Repository.CustomerRepository;
 
 @Controller
-@RequestMapping("/customer")
+@RequestMapping("/customers")
 public class CustomerController {
 	@Autowired 
 	CustomerRepository repo;
-	
-	@PostConstruct
-	void addCustomers() {
-		repo.save(new Customer("Khai", "Nguyen"));
-		repo.save(new Customer("Whatever", "Haha"));
-		repo.save(new Customer("Thanh", "Nguyen"));
-		
-	}
 	
   @GetMapping("/addCustomer")
   public String addCustomer(Model model) {
